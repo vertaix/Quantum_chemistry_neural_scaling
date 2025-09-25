@@ -1,0 +1,4 @@
+- "Foundation_models_scripts" contains Python code for utilizing the foundation machine-learned interatomic potentials
+- "SchNet_scripts" contains Python code to implement the scaling experiments using SchNet architecture
+- "Virtual Environments" contains Python packages utilized for the foundation models and training SchNet models
+- Refer to the following Zenodo repository for nuclear charges, nuclear coordinates, atomization energies used as training data and the model checkpoints from scaling experiments: https://zenodo.org/records/17202891
