@@ -74,7 +74,7 @@ from fairchem.core import pretrained_mlip, FAIRChemCalculator
 and initialize the model by calling 
 
 ```python
-model = uma_s_1p1_model_initializer(device = "cpu)
+model = uma_s_1p1_model_initializer(device = "cpu")
 ```
 
 and predict energies from provided arrays of element symbols and xyz coordinates, along with total charge and spin multiplicity, by using
