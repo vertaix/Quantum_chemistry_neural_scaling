@@ -1,6 +1,6 @@
 # Are Neural Scaling Laws Leading Quantum Chemistry Astray?
 
-This repository contains the code and data utilized in the experiments conducted in this paper. Specifically:
+This repository contains the code and data utilized in the experiments conducted in this paper: https://arxiv.org/abs/2509.26397
 
 ## Virtual Environments
 
