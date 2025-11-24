@@ -16,13 +16,12 @@ def predict_energy(
     - 'xyz_coordinates' is an array containing arrays of nuclear coordinates
       corresponding to 'element_symbols' in units of angstrom
     """
-
+    calc = AIMNet2ASE("aimnet2)
+    calc.set_charge(int(charge))
     atoms = Atoms(
         symbols = element_symbols, 
         positions = [tuple(float(x) for x in coord) for coord in xyz_coordinates]
     )
-    atoms.info["charge"] = charge 
-    atoms.info["spin"] = spin_multiplicity
-    atoms.calc = AIMNet2ASE()
-    energy = float(atoms.get_total_energy()) * 23.0609
+    atoms.info["spin"] = int(spin_multiplicity)
+    energy = float(atoms.get_potential_energy()) * 23.0609
     return energy 
